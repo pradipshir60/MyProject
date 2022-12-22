@@ -1,0 +1,203 @@
+2022-05-11 13:49:12 error: [Cake\Http\Exception\MissingControllerException] Controller class Student could not be found. in C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 349
+Exception Attributes: array (
+  'class' => 'Student',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\BaseApplication.php:315
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\StudentCurd\webroot\index.php:40
+
+Request URL: /student
+
+
+2022-05-11 13:49:31 error: [Cake\Controller\Exception\MissingActionException] Action StudentsController::index() could not be found, or is not accessible. in C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Controller\Controller.php on line 518
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'index',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:135
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:115
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\BaseApplication.php:317
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\StudentCurd\webroot\index.php:40
+
+Request URL: /students
+
+
+2022-05-11 13:51:51 error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing or invalid CSRF cookie. in C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php on line 394
+Stack Trace:
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:170
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:162
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\StudentCurd\webroot\index.php:40
+
+Request URL: /add-student
+Referer URL: http://localhost:8765/add-student
+
+
+2022-05-11 13:52:29 error: [Cake\Http\Exception\MissingControllerException] Controller class ListStudent could not be found. in C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 349
+Exception Attributes: array (
+  'class' => 'ListStudent',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\BaseApplication.php:315
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\StudentCurd\webroot\index.php:40
+
+Request URL: /list-student
+
+
+2022-05-11 13:52:32 error: [Cake\Http\Exception\MissingControllerException] Controller class ListStudent could not be found. in C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 349
+Exception Attributes: array (
+  'class' => 'ListStudent',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\BaseApplication.php:315
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\StudentCurd\webroot\index.php:40
+
+Request URL: /list-student
+
+
+2022-05-11 13:52:52 error: [Cake\Http\Exception\MissingControllerException] Controller class EditStudent could not be found. in C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 349
+Exception Attributes: array (
+  'class' => 'EditStudent',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\BaseApplication.php:315
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\StudentCurd\webroot\index.php:40
+
+Request URL: /edit-student
+
+
+2022-05-12 13:09:31 error: [Cake\Http\Exception\MissingControllerException] Controller class ListStudent could not be found. in C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 349
+Exception Attributes: array (
+  'class' => 'ListStudent',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\BaseApplication.php:315
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\StudentCurd\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\StudentCurd\webroot\index.php:40
+
+Request URL: /list-student
+
+

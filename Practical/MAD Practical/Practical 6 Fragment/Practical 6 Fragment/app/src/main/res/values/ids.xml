@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="sendData1btn" type="id" />
+    <item name="dataFrom2" type="id" />
+    <item name="fragment1Data" type="id" />
+    <item name="sendData2btn" type="id" />
+    <item name="fragment2Data" type="id" />
+    <item name="dataFrom1" type="id" />
+</resources>

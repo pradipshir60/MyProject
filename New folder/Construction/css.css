@@ -1,0 +1,175 @@
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #f9f9f9;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    text-decoration: none;
+    color: #484848;
+}
+
+.sidenav .closebtn {
+    padding-top: 13%;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: black;
+}
+
+.sidenav .closebtn:hover {
+    color: red;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 220px;
+    background-color: white;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    border-style: inset;
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.sidebar a.active {
+    color: white;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #dcdcdc;
+    color: black;
+    text-decoration: none;
+}
+
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+@media screen and (max-width: 758px) {
+    .sidebar {
+        padding-top: 10%;
+        width: 100%;
+        height: auto;
+        position: relative;
+        background-color: #dcdcdc;
+    }
+    .sidebar a {
+        float: left;
+    }
+    div.content {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sidebar {
+        padding-top: 10%;
+        width: 100%;
+        height: auto;
+        position: relative;
+        background-color: #dcdcdc;
+    }
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #content {
+        padding-left: 0%;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    #content {
+        padding-left: 0%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    #content {
+        padding-left: 30%;
+    }
+}
+
+@media only screen and (min-width: 959px) {
+    #content {
+        padding-left: 20%;
+    }
+}
+
+.mid-text {
+    margin: 70px auto;
+    text-align: center;
+    font-size: 30px;
+    max-width: 600px;
+    position: relative;
+    color: red;
+}
+
+h2::before {
+    content: "";
+    display: block;
+    width: 25%;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    color: darksalmon;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 25%;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    color: darksalmon;
+}

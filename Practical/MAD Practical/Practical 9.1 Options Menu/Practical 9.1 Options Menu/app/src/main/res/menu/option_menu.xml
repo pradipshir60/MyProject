@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:title="Demo"
+    android:id= "@+id/Status1"/>
+    <item
+        android:title="Login"
+        android:id= "@+id/Status2"/>
+    <item
+        android:title="Logout"
+        android:id= "@+id/Status3"/>
+</menu>

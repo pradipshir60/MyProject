@@ -1,0 +1,30 @@
+<?php
+session_start();
+if (isset($_SESSION['contractor_id'])) {
+  include "header.php";
+  include "../connection.php";
+
+  $con = new mysqli($host, $user, $password, $dbname, $port)
+    or die('Could not connected to the database server ' . mysqli_connect_error());
+?>
+
+  <!-- Container Fluid-->
+  <div class="container-fluid" id="container-wrapper">
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+      <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="./">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+      </ol>
+    </div>
+  </div>
+  </div>
+
+<?php
+  include "footer.html";
+} else {
+  echo "Session Timed Out!!!";
+  exit();
+}
+
+?>

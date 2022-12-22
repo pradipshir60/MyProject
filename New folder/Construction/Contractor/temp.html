@@ -1,0 +1,192 @@
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">e-tender Application</h5>
+                <a type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </a>
+            </div>
+
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="tender_no" class="col-form-label">Tender No.</label>
+                        <input type="hidden" class="form-control" name="tender_id" value="<?php echo $row1['tender_id']; ?>">
+                        <input type="text" class="form-control" name="tender_no" value="<?php echo $row1['tender_id']; ?>" disabled>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date_of_tender">Date of Tender</label>
+                        <input type="date" class="form-control" name="date_tender" value="<?php echo $row1['date'] ?>" disabled>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name_work">Name of Work</label>
+                        <input type="text" class="form-control" name="name_work" value="<?php echo $row1['name_work']?>" disabled>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cost">Estimated Cost</label>
+                        <input type="number" class="form-control" name="est_cost">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="EMD">EMD</label>
+                        <input type="number" class="form-control" name="EMD">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="deposit">Security Deposit</label>
+                        <input type="number" class="form-control" name="security_deposit">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="completion_time">Time for Completion</label>
+                        <input type="date" class="form-control" name="completion_time">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="deposit">Note</label>
+                        <textarea class="form-control" name="note"></textarea>
+                    </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <a href="temder_fill.php" class="btn btn-primary">Send Tender</a>
+            </div>
+
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    else { while($row = mysqli_fetch_array($result)) { ?>
+    <tr>
+        <td>
+            <?php echo $row["form_id"]; ?>
+        </td>
+        <td>
+            <?php $user_id=$row["user_id"];
+                
+                $query1 = "select * from user,requirement_form WHERE requirement_form.user_id=user.id and user.id=".$user_id;
+                $result1 = mysqli_query($con, $query1);
+                while($rows = mysqli_fetch_array($result1))
+                {
+                    echo $rows["name"];
+                    ?>
+        </td>
+        <td>
+            <?php
+                        echo $rows['email'];
+                    ?>
+        </td>
+        <td>
+            <?php 
+                        echo $rows[4];
+                    ?>
+        </td>
+
+        <td>
+            <?php echo $row['address'] ?>
+        </td>
+        <td>
+            <?php echo $row['area'] ?>
+        </td>
+        <td>
+            <?php echo $row['description']; ?>
+        </td>
+        <td>
+            <?php
+                        $query2 = "SELECT * FROM e_tender WHERE requirement_form_id=".$row['form_id'];
+                        $result2 = mysqli_query($con, $query2);
+
+                        while($row1 = mysqli_fetch_array($result2))
+                        {
+                    ?>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Apply</button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">e-tender Application</h5>
+                                <a type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </a>
+                            </div>
+
+                            <div class="modal-body">
+                                <form method="POST" action="tender_fill.php">
+                                    <div class="form-group">
+                                        <label for="tender_no" class="col-form-label">Tender No.</label>
+                                        <input type="hidden" class="form-control" name="tender_id" value="<?php echo $row1['tender_id']; ?>">
+                                        <input type="text" class="form-control" name="tender_no" value="<?php echo $row1['tender_id']; ?>" disabled>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="date_of_tender">Date of Tender</label>
+                                        <input type="date" class="form-control" name="date_tender" value="<?php echo $row1['date'] ?>" disabled>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="name_work">Name of Work</label>
+                                        <input type="text" class="form-control" name="name_work" value="<?php echo $row1['name_work']?>" disabled>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="cost">Estimated Cost</label>
+                                        <input type="number" class="form-control" name="est_cost">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="EMD">EMD</label>
+                                        <input type="number" class="form-control" name="EMD">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="deposit">Security Deposit</label>
+                                        <input type="number" class="form-control" name="security_deposit">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="completion_time">Time for Completion</label>
+                                        <input type="date" class="form-control" name="completion_time">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="deposit">Note</label>
+                                        <textarea class="form-control" name="note"></textarea>
+                                    </div>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-primary">Send Tender</button>
+                            </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <?php
+                          }
+                        }
+                ?>
+        </td>
+    </tr>
+    <?php
+        }
+    }
+        ?>

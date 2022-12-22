@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Form</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <div class="main">
+
+        <section class="signup">
+            <div class="container col-sm-8">
+                <div class="signup-content">
+                    <form enctype="multipart/form-data" method="POST" id="signup-form" class="signup-form" role="form" action="register.php">
+                        <div class="page-header">
+                            <h2 class="form-title">Create account</h2>
+                        </div>
+                        <div class="form-group mt-5 required">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" name="user_name" id="user_name" placeholder="Enter Name" required>
+                            <span id="username" class="text-danger font-weight-bold"></span>
+                        </div>
+
+                        <div class="form-group required">
+                            <label for="phn_no">Mobile Number</label>
+                            <input type="text" class="form-control" name="phn_no" id="phn_no" placeholder="Enter Mobile No." required>
+                            <span id="mobile" class="text-danger font-weight-bold"></span>
+                        </div>
+
+                        <div class="form-group required">
+                            <label for="address">Address</label>
+                            <input type="text" class="form-control" name="address" id="address" placeholder="Enter Address" required>
+                            <span id="add" class="text-danger font-weight-bold"></span>
+                        </div>
+
+                        <div class="form-group required">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Enter Email" required>
+                            <span id="mail" class="text-danger font-weight-bold"></span>
+                        </div>
+
+                        <div class="form-group required">
+                            <label for="shopAct">ShopAct</label>
+                            <input type="text" class="form-control" name="shopAct" id="shopAct" autocomplete="off" placeholder="Enter ShopAct" required>
+                            <span id=" shop_act " class="text-danger font-weight-bold "></span>
+                        </div>
+
+                        <div class="form-group required ">
+                            <label for="aadhaar ">Aadhaar No</label>
+                            <input type="text " class="form-control " name="aadhaar " id="aadhaar " autocomplete="off " placeholder="Enter Aadhaar No (0000 1111 2222) " required>
+                            <span id="aadhaar_no " class="text-danger font-weight-bold "></span>
+                        </div>
+
+                        <div class="form-group ">
+                            <div class="custom-file ">
+                                <input type="file " class="custom-file-input form-control " name="pdf_file " id="pdf_file " required/>
+                                <label class="custom-file-label " for="pdf_file ">Choose file</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group ">
+                            <label for="shopAddress ">Shop Address</label>
+                            <input type="text " class="form-control " name="shopAddress " id="shopAddress " autocomplete="off " placeholder="Enter Shop Address " required>
+                            <span id="shop_add " class="text-danger font-weight-bold "></span>
+                        </div>
+
+                        <div class="form-group ">
+                            <label for="password ">Password</label>
+                            <input type="password" class="form-control " name="password " id="password " placeholder="Enter your Password " required>
+                            <span id="pass " class="text-danger font-weight-bold "></span>
+                        </div>
+
+                        <div class="form-group ">
+                            <label for="confirmPassword ">Confirm Password</label>
+                            <input type="password" class="form-control " name="confirm " id="confirm " placeholder="Confirm your password " required>
+                            <span id="conf_pass " class="text-danger font-weight-bold "></span>
+                        </div>
+
+                        <div class="form-group ">
+                            <label for="material ">Providing Material</label>
+                            <select class="mul-select " id="material " name="material[ ] " multiple="true " required>
+                                <option value="Concrete ">Concrete</option>
+                                <option value="Cement ">Cement</option>
+                                <option value="River Sand ">River Sand</option>
+                                <option value="Aggregates ">Aggregates</option>
+                                <option value="Bricks ">Bricks</option>
+                                <option value="Steel ">Steel</option>
+                                <option value="Wood ">Wood</option>
+                                <option value="Glass ">Glass</option>
+                                <option value="Ceramics ">Ceramics</option>
+                                <option value="Plastics ">Plastics</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group ">
+                            <label for="availability ">Area for availability</label>
+                            <select class="mul-select " id="availability " name="availability[ ] " multiple="true " required>
+                                <option value="Ambegaon ">Ambegaon</option>  <option value="Aundh ">Aundh</option> <option value="Baner ">Baner</option>  <option value="Bavdhan Khurd ">Bavdhan Khurd</option>
+                                <option value="Bavdhan Budruk ">Bavdhan Budruk</option>  <option value="Balewadi ">Balewadi</option>  <option value="Bibvewadi ">Bibvewadi</option>    <option value="Bhugaon ">Bhugaon</option>
+                                <option value="Bhukum ">Bhukum</option> <option value="Dhankawadi ">Dhankawadi</option> <option value="Dhanori ">Dhanori</option>  <option value="Dhayari ">Dhayari</option>    
+                                <option value="Erandwane ">Erandwane</option>  <option value="Fursungi ">Fursungi</option> <option value="Ghorpadi ">Ghorpadi</option> <option value="Hadapsar ">Hadapsar</option>
+                                <option value="Hingne Khurd ">Hingne Khurd</option> <option value="Karve Nagar ">Karve Nagar</option> <option value="Kalas ">Kalas</option> <option value="Kartaj ">Katraj</option>
+                                <option value="Khadki ">Khadki</option> <option value="Kharadi ">Kharadi</option> <option value="Kondhawa ">Kondhawa</option> <option value="Koregaon Park ">Koregaon Park</option> 
+                                <option value="Kothrud ">Kothrud</option> <option value="Manjiri ">Manjiri</option> <option value="Markal ">Markal</option> <option value="Mohammed Wadi ">Mohammed Wadi</option>
+                                <option value="Mundhawa ">Mundhawa</option> <option value="Nanded ">Nanded</option> <option value="Parvati ">Parvati</option> <option value="Panmala ">Panmala</option> 
+                                <option value="Pashan ">Pashan</option> <option value="Pirangut ">Pirangut</option> <option value="Shivane ">Shivane</option> <option value="Sus ">Sus</option> <option value="Undri ">Undri</option>
+                                <option value="Vishrantwadi ">Vishrantwadi</option> <option value="Vitthalwadi ">Vitthalwadi</option> <option value="Vadgaon Khurd ">Vadgaon Khurd</option> <option value="Vadgaon Budruk ">Vadgaon Budruk</option>
+                                <option value="Vadgaon Sheri ">Vadgaon Sheri</option> <option value="Wagholi ">Wagholi</option> <option value="Wanorie ">Wanorie</option> <option value="Warje ">Warje</option> <option value="Yerwada ">Yerwada</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group ">
+                            <input type="checkbox " name="agree-term " id="agree-term " class="agree-term " required>
+                            <label for="agree-term " class="checkbox "><span><span></span></span>I agree all statements in  <a href="# " class="term-service ">Terms of service</a></label>
+                        </div>
+
+                        <div class="form-group ">
+                            <input type="submit " name="submit " id="submit " class="form-submit " value="Sign up " />
+                        </div>
+                    </form>
+                    <p class="loginhere ">
+                        Have already an account ? <a href="# " class="loginhere-link ">Login here</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- JS -->
+    <script type="text/javascript " src="js/validations.js "></script>
+    <script type="text/javascript " src="vendor/jquery/jquery.min.js "></script>
+    <script type="text/javascript " src="js/main.js "></script>
+    <script type="text/javascript " src="js/jquery.min.js "></script>
+    <script type="text/javascript " src="js/bootstrap.js "></script>
+    <script type="text/javascript " src="js/bootstrap.min.js "></script>
+    <script type="text/javascript " src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js "></script>
+
+    <script type="text/javascript ">
+        $(function() {
+
+            $("#username ").hide();
+            $("#mobile ").hide();
+            $("#add ").hide();
+            $("#mail ").hide();
+            $("#shop_act ").hide();
+            $("#aadhaar_no ").hide();
+            $("#shop_add ").hide();
+            $("#pass ").hide();
+            $("#conf_pass ").hide();
+
+            var error_name = false;
+            var error_mobile = false;
+            var error_add = false;
+            var error_mail = false;
+            var error_shop_act = false;
+            var error_aadhaar = false;
+            var error_shop_add = false;
+            var error_pass = false;
+            var error_conf_pass = false;
+
+            $("#user_name ").focusout(function() {
+                check_name();
+            });
+
+            $("#phn_no ").focusout(function() {
+                check_mobile();
+            });
+
+            $("#address ").focusout(function() {
+                check_address();
+            });
+
+            $("#email ").focusout(function() {
+                check_email();
+            });
+
+            $("#aadhaar ").focusout(function() {
+                check_aadhaar();
+            });
+
+            $("#shopAddress ").focusout(function() {
+                check_shop_add();
+            });
+
+            $("#password ").focusout(function() {
+                check_password();
+            });
+
+            $("#confirm ").focusout(function() {
+                check_conf_pass();
+            })
+
+
+            function check_name() {
+                var pattern = /^[a-z A-Z ]*$/;
+                var fname = $("#name ").val();
+                if (pattern.test(fname) && fname !== '') {
+                    $("#username ").hide();
+                    $("#user_name ").css("border-bottom ", "2px solid #34F458 ");
+                } else {
+                    $("#username ").html("Should contain only Characters ");
+                    $("#username ").show();
+                    $("#user_name ").css("border-bottom ", "2px solid #F90A0A ");
+                    error_fname = true;
+                }
+            }
+
+            function check_mobile() {
+                var pattern = /([0-9]{10})|(\([0-9]{3}\)\s+[0-9]{3}\-[0-9]{4})/;
+                var phn = $("#phn_no ").val();
+                if (pattern.test(phn) && phn !== '' && phn.length == 10) {
+                    $("#mobile ").hide();
+                    $("#phn_no ").css("border-bottom ", "2px solid #34F458 ");
+                } else {
+                    $("#mobile ").html("Invalid Phone no! ");
+                    $("#mobile ").show();
+                    $("#phn_no ").css("border-bottom ", "2px solid #F90A0A ");
+                    error_fname = true;
+                }
+            }
+
+            function check_address() {
+                var add = $("#address ").val();
+                if (add !== '' && add.length <= 150) {
+                    $("#add ").hide();
+                    $("#address ").css("border-bottom ", "2px solid #34F458 ");
+                } else {
+                    $("#add ").html("Address should be less than 150 words! ");
+                    $("#add ").show();
+                    $("#address ").css("border-bottom ", "2px solid #F90A0A ");
+                    error_add = true;
+                }
+            }
+
+            function check_email() {
+                var email = $("#email ").val();
+                var pattern = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+                if (pattern.test(email) && email !== '') {
+                    $("#mail ").hide();
+                    $("#email ").css("border-bottom ", "2px solid #34F458 ");
+                } else {
+                    $("#mail ").html("Invalid email address! ");
+                    $("#mail ").show();
+                    $("#email ").css("border-bottom ", "2px solid #F90A0A ");
+                    error_mail = true;
+                }
+            }
+
+            function check_aadhaar() {
+                var aadhaar = $("#aadhaar ").val();
+                var pattern = /^\d{4}\s\d{4}\s\d{4}$/;
+                if (pattern.test(aadhaar) && aadhaar !== '') {
+                    $("#aadhaar_no ").hide();
+                    $("#aadhaar ").css("border-bottom ", "2px solid #34F458 ");
+                } else {
+                    $("#aadhaar_no ").html("Invalid Addhaar No! ");
+                    $("#aadhaar_no ").show();
+                    $("#aadhaar ").css("border-bottom ", "2px solid #F90A0A ");
+                    error_aadhaar = true;
+                }
+            }
+
+            function check_shop_add() {
+                var add = $("#shopAddress ").val();
+                if (add !== '' && add.length <= 150) {
+                    $("#shop_add ").hide();
+                    $("#shopAddress ").css("border-bottom ", "2px solid #34F458 ");
+                } else {
+                    $("#shop_add ").html("Address should be less than 150 words! ");
+                    $("#shop_add ").show();
+                    $("#shopAddress ").css("border-bottom ", "2px solid #F90A0A ");
+                    error_shop_add = true;
+                }
+            }
+
+            function check_password() {
+                var pass = $("#password ").val();
+                errors = [];
+                if (pass.length < 8) {
+                    errors.push("Must be 8 characters ");
+                }
+                if (pass.length > 16) {
+                    errors.push("Must be less than 16 characters ");
+                }
+                if (!(/[a-z]/).test(pass)) {
+                    errors.push("Your password must contain at least one small letter! ");
+                }
+                if (!(/[A-Z]/).test(pass)) {
+                    errors.push("Your password must contain at least one capital letter! ");
+                }
+                if (!(/[0-9]/).test(pass)) {
+                    errors.push("Your password must contain at least one numeric digit! ");
+                }
+                if (errors.length > 0) {
+                    $("#pass ").html(errors);
+                    $("#pass ").show();
+                    $("#password ").css("border-bottom ", "2px solid #F90A0A ");
+                    error_pass = true;
+                } else {
+                    $("#pass ").hide();
+                    $("#password ").css("border-bottom ", "2px solid #34F458 ");
+                }
+            }
+
+            function check_conf_pass() {
+                var pass1 = $("#confirm ").val();
+                var pass2 = $("#password ").val();
+                if (pass1 == pass2) {
+                    $("#conf_pass ").hide();
+                    $("#confirm ").css("border-bottom ", "2px solid #34F458 ");
+                } else {
+                    $("#conf_pass ").html("Password not matched! ");
+                    $("#conf_pass ").show();
+                    $("#confirm ").css("border-bottom ", "2px solid #F90A0A ");
+                    error_shop_add = true;
+                }
+
+            }
+
+
+            $("#signup_form ").submit(function() {
+                error_name = false;
+                error_mobile = false;
+                error_add = false;
+                error_mail = false;
+                error_aadhaar = false;
+                error_shop_add = false;
+                error_pass = false;
+                error_conf_pass = false;
+
+                check_name();
+                check_mobile();
+                check_address();
+                check_email();
+                check_aadhaar();
+                check_shop_add();
+                check_password();
+                check_conf_pass();
+
+                if (error_conf_pass === false && error_pass === false && error_shop_add === false && error_name === false && error_mobile === false && error_add === false && error_email === false && error_aadhaar === false) {
+                    alert("Registration Successful ");
+                    return true;
+                } else {
+                    alert("Please Fill the form Correctly ");
+                    return false;
+                }
+            });
+
+        });
+    </script>
+
+    <script>
+        $('#pdf_file').on('change', function() {
+            var fileName = $(this).val();
+            $(this).next('.custom-file-label').html(fileName);
+        })
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $('.mdb-select').materialSelect();
+        });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $(".mul-select ").select2({
+                tags: true,
+                tokenSeparator: [';']
+            });
+        });
+    </script>
+
+</body>
+
+</html>
